@@ -12,18 +12,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var c: ConstraintLayout = layout
         btn_rosario.setOnClickListener {
-            var img = BitmapFactory.decodeResource(resources, R.drawable.rosario)
-            c.setBackgroundResource(R.drawable.rosario)
+            img_back.setBackgroundResource(R.drawable.rosario)
         }
         btn_esfaqueador.setOnClickListener {
-            var img = BitmapFactory.decodeResource(resources, R.drawable.esfaqueador)
-
+            img_back.setBackgroundResource(R.drawable.esaqueador)
         }
         btn_amoeba.setOnClickListener {
-            var img = BitmapFactory.decodeResource(resources, R.drawable.amoeba)
-
+            img_back.setBackgroundResource(R.drawable.amoeba)
         }
         btn_sair.setOnClickListener {
             finish()
